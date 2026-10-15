@@ -1,12 +1,26 @@
 function setup() {
-  createCanvas(windowWidth, windowHeight);
-  background(100, 20, 250);
+  createCanvas(800, 800);
+  background(0, 0, 0);
 }
 
 function draw() {
-  circle(mouseX, mouseY, 60);
-}
+fill(238, 36, 0);
+    quad(0, 0,362, 0,362, 316,0, 316);
+    
+fill(237,241.237)
+  quad(373,0,800,0,800,316,373,316);
+  quad(0,334,362,334,362,511,0,511);
+  quad(373,334,800,334,800,511,373,511);
+  quad(86,527,362,527,362,800,86,800);
+  quad(373,770,608,770,608,800,373,800);
+  quad(620,527,800,527,800,800,620,800);
 
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
+fill(250, 209, 0);
+  quad(0,527,75,527,75,800,0,800);
+
+fill(31, 32, 117);
+  quad(373,527,608,527,608,757,373,757);
+
+
+
 }
