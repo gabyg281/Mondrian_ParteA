@@ -40,9 +40,7 @@ if (random(1) > 0.5) {
   line(x, y, x + size, y); } 
 else {
   line(x, y, x, y + size); }
-  yhuj
 
-  
  }
 
 }
