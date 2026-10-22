@@ -1,13 +1,15 @@
 function setup() {
   createCanvas(800, 800);
   background(0, 0, 0);
+  noLoop();
 }
 
 function draw() {
+
 fill(238, 36, 0);
-    quad(0, 0,362, 0,362, 316,0, 316);
+  quad(0, 0,362, 0,362, 316,0, 316);
     
-fill(237,241.237)
+fill(237,241,237)
   quad(373,0,800,0,800,316,373,316);
   quad(0,334,362,334,362,511,0,511);
   quad(373,334,800,334,800,511,373,511);
@@ -21,6 +23,24 @@ fill(250, 209, 0);
 fill(31, 32, 117);
   quad(373,527,608,527,608,757,373,757);
 
+for (let i = 0; i < 150000; i++) {
+  let x = random(width);
+  let y = random(height);
 
+ if (random(1) > 0.5) {
+  stroke(0, random(1, 3)); } 
+ else { 
+  stroke(245, 235, 210, random(1, 4)); }
+    
+strokeWeight(random(0.5, 1.5));
+   
+let size = random(10, 40);
+
+if (random(1) > 0.5) {
+  line(x, y, x + size, y); } 
+else {
+  line(x, y, x, y + size); }
+  
+ }
 
 }
